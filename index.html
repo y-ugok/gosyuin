@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="arrow.css" />
+    <!-- slicker -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header><h1>御朱印巡りの紹介サイト</h1></header>
+    <main>
+      <select class="filter">
+        <option value="all" class="is-active">全て表示</option>
+        <option value="hyogo">兵庫</option>
+        <option value="osaka">大阪</option>
+        <option value="kyoto">京都</option>
+        <option value="tokushima">徳島</option>
+        <option value="hiroshima">広島</option>
+      </select>
+
+      <div class="category">
+        <div class="is-show" data-category="hiroshima">
+          <h2>厳島神社</h2>
+          <p>〒612-0882　京都市伏見区深草薮之内町68番地</p>
+          <div class="flex">
+            <div class="right">
+              <div class="swiper-container">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/01.jpg" /></div>
+                    <div class="swiper-slide"><img src="images/02.jpg" /></div>
+                  </div>
+
+                  <!-- 必要に応じてナビボタン -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+                <!-- 必要に応じてページネーション -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="left">
+              <p>[ 概要 ]</p>
+              <ul>
+                <li>全国の稲荷信仰の発祥の地として知られている</li>
+                <li>五穀豊穣、商売繁盛の神として庶民信仰を集めている</li>
+                <li>鳥居は今では境内全域に約1万基並ぶ</li>
+                <li>外国人にも大人気のスポット</li>
+              </ul>
+              <p>[ 感想 ]</p>
+              <p>
+                何よりも朱色の鳥居がズラりと続き日本らしい風景で素敵でした。
+                進めど進めど続く鳥居が「どこか異世界に迷い込んだのではないか？」「永遠に続くのではないか」と思わせてくれました。写真映えして思い出にも残るので是非一度は行っておくと良い場所だと思います。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="is-show" data-category="kyoto">
+          <h2>厳島神社</h2>
+          <p>〒612-0882　京都市伏見区深草薮之内町68番地</p>
+          <!-- スライドショーここから -->
+          <div class="flex">
+            <div class="right">
+              <div class="swiper-container">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/01.jpg" /></div>
+                    <div class="swiper-slide"><img src="images/02.jpg" /></div>
+                    <div class="swiper-slide"><img src="images/03.jpg" /></div>
+                    <div class="swiper-slide"><img src="images/04.jpg" /></div>
+                  </div>
+
+                  <!-- 必要に応じてナビボタン -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+                <!-- 必要に応じてページネーション -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="left">
+              <p>[ 概要 ]</p>
+              <ul>
+                <li>全国の稲荷信仰の発祥の地として知られている</li>
+                <li>五穀豊穣、商売繁盛の神として庶民信仰を集めている</li>
+                <li>
+                  鳥居は今では境内全域に約1万基並ぶ ・外国人にも大人気のスポット
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- スライドショーここまで -->
+        </div>
+        <div class="is-show" data-category="hyogo">
+          <h2>自凝島(おのころ)神社</h2>
+        </div>
+        <div class="is-show" data-category="tokushima">
+          <h2>霊山寺</h2>
+        </div>
+        <div class="is-show" data-category="tokushima">
+          <h2>極楽寺</h2>
+        </div>
+        <div class="is-show" data-category="hyogo">
+          <h2>清荒神清澄(せいちょう)寺</h2>
+        </div>
+        <div class="is-show" data-category="kyoto">
+          <h2>北野天満宮</h2>
+        </div>
+        <div class="is-show" data-category="hyogo">
+          <h2>尼崎寺町</h2>
+        </div>
+        <div class="is-show" data-category="osaka">
+          <h2>露天(つゆのてん)神社</h2>
+        </div>
+        <div class="is-show" data-category="hyogo"><h2>生田神社</h2></div>
+        <div class="is-show" data-category="hyogo"><h2>北野天満神社</h2></div>
+      </div>
+    </main>
+    <script src="https://unpkg.com/petite-vue"></script>
+    <script src="script.js"></script>
+    <script src="arrow.js"></script>
+  </body>
+</html>
