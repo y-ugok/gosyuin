@@ -21,21 +21,12 @@ body {
   left: 0;
   z-index: -1;
   width: 100%;
-  height: -webkit-fill-available;
-  /* height: 1000px; */
+  height: 1200px; 
   background-repeat: no-repeat;
   background-position: center center;
   /* background-position:水平方向の位置と垂直方向の位置を指定 */
   background-image: url(./images/haikei.jpg);
   background-size: cover;
-}
-
-/* Avoid Chrome to see Safari hack */
-@supports (-webkit-touch-callout: none) {
-  .body {
-    /* The hack for Safari */
-    height: -webkit-fill-available;
-  }
 }
 .category > div {
   display: none;
