@@ -1,0 +1,64 @@
+body {
+  margin: 0 auto;
+}
+h2 {
+  padding-left: 1em;
+}
+.swiper-backface-hidden .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+swiper-button-prev {
+  margin-right: 10px;
+}
+swiper-button-next {
+  margin-left: 10px;
+}
+/* swiper-backgace-hidden このクラスが.swiper-slideに適用されている場合スライドの背面が隠されdisplay:flex;justify-content:center; align-items:center;のスタイルが適用されることになる つまりスライドの内容が中央に配置される */
+
+/* swiper-backface-hiddenが無いと真ん中の画像が矢印の中央にならない */
+/* .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+/* =================== */
+
+.swiper-slide img {
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+.swiper {
+  height: 300px;
+  width: min(90%, 600px);
+  /* 700px未満の場合は90%が幅の値として設定される */
+  margin-inline: auto;
+  /* インライン方向(テキストの流れと同じ方向) */
+  position: relative;
+}
+
+.swiper-container {
+  /* swiper-conatinerクラスがぺーいネーションの位置を決める起点となる */
+  position: relative;
+}
+
+@media screen and (min-width: 900px) {
+  /* ここから編集 */
+  .swiper {
+    height: 500px;
+  }
+  .right,
+  .left {
+    width: 50%;
+  }
+  .flex {
+    display: flex;
+    margin: 0 auto;
+  }
+  .swiper-slide img {
+    width: 100%;
+  }
+}
