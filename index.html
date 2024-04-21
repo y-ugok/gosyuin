@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preload" href="./images/haikei2.jpg" as="image" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="arrow.css" />
+    <!-- slicker -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- CDNの読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="body">
+      <header><h1>御朱印巡りの紹介サイト</h1></header>
+      <main>
+        <select class="filter">
+          <option value="all" class="is-active">全て表示</option>
+          <option value="hyogo">兵庫</option>
+          <option value="osaka">大阪</option>
+          <option value="kyoto">京都</option>
+          <option value="tokushima">徳島</option>
+          <option value="hiroshima">広島</option>
+        </select>
+
+        <div class="category">
+          <div class="is-show" data-category="kyoto">
+            <h2>伏見稲荷大社</h2>
+            <p>〒612-0882 京都市伏見区深草薮之内町68番地</p>
+            <div class="flex">
+              <div class="right">
+                <div class="swiper-container">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/1-1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/1-2.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/1-3.jpg" />
+                      </div>
+                    </div>
+
+                    <!-- 必要に応じてナビボタン -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- 必要に応じてページネーション -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="left">
+                <p>概要</p>
+                <ul>
+                  <li>
+                    1300年に渡り五穀豊穣、商売繁盛、家内安全、所願成就の神様として崇められてきた
+                  </li>
+                  <li>お稲荷さんとも称される稲荷神社の総本宮</li>
+                  <li>
+                    願い事が「通る」或いは「通った」お礼の意味から鳥居を感謝のしるしとして奉納することが江戸時代以降に広がった結果、鳥居が沢山建てられた
+                  </li>
+                  <li>鳥居は今では境内全域に約1万基並ぶ</li>
+                </ul>
+                <p>感想</p>
+                <p>
+                  一番印象に残っているのは千本鳥居です。
+                  朱色の鳥居は思わず心を奪われるような美しい風景を作りあげていました。
+                  鳥居はどこまでも続いていて異世界に迷い込んだかのような気分になりました。思い出に残って写真映えもするので人生で一度は行っておくべき場所だと思います。長い距離を歩くので良い運動にもなります。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="is-show" data-category="hiroshima">
+            <h2>厳島神社</h2>
+            <p>〒739-0588 広島県廿日市市宮島町1-1</p>
+            <!-- スライドショーここから -->
+            <div class="flex">
+              <div class="right">
+                <div class="swiper-container">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/2-1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/2-2.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/2-3.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/2-4.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/2-5.jpg" />
+                      </div>
+                    </div>
+
+                    <!-- 必要に応じてナビボタン -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- 必要に応じてページネーション -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="left">
+                <p>概要</p>
+                <ul>
+                  <li>
+                    宮島自体が神として崇められていたので土地を傷つけることを避けるために陸地でなく海上に造営された
+                  </li>
+                  <li>
+                    日本で唯一潮の満ち引きのある場所に建っていて、満潮時には青い海に浮かぶ鳥居を見れて干潮時には鳥居の足元まで歩いて渡ることができる
+                  </li>
+                  <li>ご利益は海上安全や交通安全、金運、必勝祈願等がある</li>
+                </ul>
+                <p>感想</p>
+                <p>
+                  以前から、いつか厳島神社に行ってみたいと憧れていました。宮島まではフェリーに乗って行き特別感があって気分も上がりました。
+                  満潮時に行ったので朱色の鮮やかな鳥居が海に浮いているように見えて空と海の青色に映えてとても素敵でした。
+                  他にも飲食店や、お土産屋さんもあって揚げもみじを食べたのも良い思い出です。鹿にも会えて見所満載でした。
+                </p>
+              </div>
+            </div>
+            <!-- スライドショーここまで -->
+          </div>
+          <div class="is-show" data-category="kyoto">
+            <h2>建仁寺</h2>
+            <p>〒605-0811 京都府京都市東山区大和大路通四条下る小松町584番地</p>
+            <div class="flex">
+              <div class="right">
+                <div class="swiper-container">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/3-1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/3-2.jpg" />
+                      </div>
+                    </div>
+
+                    <!-- 必要に応じてナビボタン -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- 必要に応じてページネーション -->
+                    <div class="swiper-pagination"></div>
+                    --
+                  </div>
+                </div>
+              </div>
+              <div class="left">
+                <p>概要</p>
+                <ul>
+                  <li>
+                    開創は鎌倉時代の建仁2年（1202）で、寺名は当時の元号から名づけられている
+                  </li>
+                  <li>
+                    京都五山に認定されている格式高いお寺で京都最古の禅寺とも言われている
+                  </li>
+                  <li>
+                    多数の重要文化財や風神雷神図屏風等の優秀な日本美術を保有
+                  </li>
+                  <li>開運、勝負運、勝利運のご利益があるとされている</li>
+                </ul>
+                <p>感想</p>
+                <p>
+                  高校2年の京都遠足で訪れました。
+                  受付を通ると風神雷神図屏風が展示されていて豪華絢爛で見惚れてしまいました。さらに、境内には趣の異なる3つの日本庭園もあり、見ているだけで心が整うような感覚になりました。
+                  本堂には天井いっぱいに龍が描かれていて迫力に圧倒されました。他にも繊細なタッチで描かれた龍の襖絵等の展示もあり、このお寺では昔の日本文化に触れられました。
+                </p>
+              </div>
+            </div>
+            <!-- スライドショーここまで -->
+          </div>
+          <div class="is-show" data-category="hyogo">
+            <h2>自凝島(おのころ)神社</h2>
+            <p>〒656-0423 兵庫県南あわじ市榎列下幡多415</p>
+            <div class="flex">
+              <div class="right">
+                <div class="swiper-container">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/4-1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/4-2.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/4-3.jpg" />
+                      </div>
+                    </div>
+
+                    <!-- 必要に応じてナビボタン -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- 必要に応じてページネーション -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="left">
+                <p>概要</p>
+                <ul>
+                  <li>
+                    日本三大鳥居の1つで高さは21.7mとなっていて木造の鳥居としては国内最大級
+                  </li>
+                  <li>
+                    神伊弉諾命（イザナギのミコト）・伊弉冉命（イザナミのミコト）の二神がお祀りされており縁結び、安産の神として知られている
+                  </li>
+                  <li>
+                    古事記・日本書紀によれば神伊弉諾命・伊弉冉命の二神により作られた日本発祥、国産みの聖地がこの神社とされている
+                  </li>
+                </ul>
+                <p>感想</p>
+                <p>
+                  大きな鳥居はかなり遠くからでも見えます。近くで写真を撮ろうとしても鳥居があまりにも大きいので引きで撮影しないとカメラに収まりきれなかったのを覚えています。
+                  鳥居の巨大さと比べると境内や拝殿等はこじんまりしていますが厳かな雰囲気に包まれていました。
+                  国生みの神話に興味がある方や淡路観光に行く方は是非寄ってみて下さい。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="is-show" data-category="tokushima">
+            <h2>霊山(りょうぜん)寺</h2>
+            <p>〒779-0230 徳島県鳴門市大麻町板東字塚鼻</p>
+            <div class="flex">
+              <div class="right">
+                <div class="swiper-container">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/5-1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/5-2.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/5-3.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/5-4.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/5-5.jpg" />
+                      </div>
+                    </div>
+
+                    <!-- 必要に応じてナビボタン -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="left">
+                <p>概要</p>
+                <ul>
+                  <li>奈良時代に聖武天皇の勅願により行基が開創</li>
+                  <li>
+                    四国八十八箇所巡りを始める最初の場所
+                    (四国八十八箇所巡り:人間には88の煩悩があり、指定されている全ての霊場を巡ることで煩悩が消えると言われている)
+                  </li>
+                  <li>
+                    仁王門を入ってすぐの所にある観音様は仕事、健康、幸せ等の全ての縁結びにご利益があるとされている
+                  </li>
+                </ul>
+                <p>感想</p>
+                <p>
+                  お寺付近の売店では外国人のような顔立ちのマネキンがお遍路の装束を着た状態で飾られていたので記念に写真を撮りました。
+                  お寺の前には荘厳な門が建ち、本堂までの道の横は池になって建物の構造に惹かれました。こじんまりしていますが本堂の中も思いの外美しいので徳島県に行った際には是非寄ってほしい場所です。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="is-show" data-category="hyogo">
+            <h2>極楽寺</h2>
+            <p>〒779-0225 徳島県鳴門市大麻町檜字段の上12</p>
+            <div class="flex">
+              <div class="right">
+                <div class="swiper-container">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/6-1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/6-2.jpg" />
+                      </div>
+                    </div>
+
+                    <!-- 必要に応じてナビボタン -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- 必要に応じてページネーション -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="left">
+                <p>概要</p>
+                <ul>
+                  <li>奈良時代に行基によって建設</li>
+
+                  <li>長寿や家内安全のご利益があると言われている</li>
+                  <li>四国八十八箇所巡りの第二番</li>
+
+                  <li>
+                    本像の木造阿弥陀如来像は鎌倉時代の作として国の重要文化財に指定されている
+                  </li>
+                </ul>
+                <p>感想</p>
+                <p>
+                  1番目の霊山寺から車ですぐでした。
+                  朱色に塗られた仁王門が立派で門には二体の仁王像も納まっています。さらに、弘法大師が建てた長命杉は立派で生命力を感じました。
+                  薬師堂、観音堂、一願水掛地蔵尊等見どころも沢山あり、境内は自然豊かで広々としていて落ち着いた雰囲気を楽しめました。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="is-show" data-category="tokushima">
+            <h2>清荒神清澄(せいちょう)寺</h2>
+            <p>〒665-0837 兵庫県宝塚市米谷清シ1-番地</p>
+            <div class="flex">
+              <div class="right">
+                <div class="swiper-container">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/7-1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/7-2.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/7-3.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/7-4.jpg" />
+                      </div>
+                    </div>
+
+                    <!-- 必要に応じてナビボタン -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- 必要に応じてページネーション -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="left">
+                <p>概要</p>
+                <ul>
+                  <li>創建は平安時代の896年</li>
+                  <li>
+                    阪急清荒神駅から続く参道は滝の道とも呼ばれており飲食店や土産物店が軒を連ねている
+                  </li>
+                  <li>家内安全や商売繁盛、厄除開運等のご利益がある</li>
+                </ul>
+                <p>感想</p>
+                <p>
+                  私が行った時は11月だったのでイチョウの黄色い葉や銀杏、真っ赤な紅葉も見られて秋らしさを感じられて素敵でした。
+                  奥には滝もありマイナスイオンを感じられます。境内には高さ3mある金銅造りのお地蔵さんが建っていて頭上にまで水をかけて1つのお願いを念ずれば、ご利益があるとされていたので以前訪れた時は水をかけてお願いしたのを覚えています。山の中にあるため自然豊かで気分が爽快になりました。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="is-show" data-category="kyoto">
+            <h2>北野天満宮</h2>
+            <p>〒602-8386 京都市上京区馬喰町</p>
+            <div class="flex">
+              <div class="right">
+                <div class="swiper-container">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/8-1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/8-2.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/8-3.jpg" />
+                      </div>
+                    </div>
+
+                    <!-- 必要に応じてナビボタン -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- 必要に応じてページネーション -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="left">
+                <p>概要</p>
+                <ul>
+                  <li>菅原道真を御祭神として祀る天満宮・天神社の総本山</li>
+                  <li>学問、至誠、芸能、厄除の神として信仰されている</li>
+                  <li>
+                    撫牛(牛の像)の頭を撫でると1つだけ願いが叶うとされている
+                  </li>
+                  <li>
+                    梅を愛した菅原野道真公ゆかりの梅の木50種約1500本が約2万坪の敷地に咲いている
+                  </li>
+                  <li>国内の本殿・拝殿は桃山文化を代表する神社建築</li>
+                </ul>
+                <p>感想</p>
+                <p>
+                  大学受験のお礼参りに行きました。
+                  建物は歴史があって社殿の地面には白い石が広がっていて他の神社よりも全体的に品を感じられて気持ちも落ち着きます。
+                  私が行った時は梅の実を干しているのが見られました。次は梅の開花時期に行って満開の花を見たいと思いました。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="is-show" data-category="hyogo">
+            <h2>七福神めぐり</h2>
+            <p>尼崎寺町</p>
+            <div class="flex">
+              <div class="right">
+                <div class="swiper-container">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/9-1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/9-2.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/9-3.JPG" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/9-4.JPG" />
+                      </div>
+                    </div>
+
+                    <!-- 必要に応じてナビボタン -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- 必要に応じてページネーション -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="left">
+                <p>概要</p>
+                <ol>
+                  <li>
+                    貴布禰(きふね)神社：開運出世、幸運をもたらす神様である福禄寿神のご朱印を押せる
+                  </li>
+                  <li>
+                    長遠(ぢょうおん)寺：家門隆昌（家が立派に栄えるという意味）のご利益があるとされている毘沙門天のご朱印
+                  </li>
+                  <li>大覚寺：知恵・良縁をもたらす弁財天のご朱印</li>
+                  <li>
+                    法園(ほうおんじ)寺：家庭円満・子宝の神様である布袋尊のご朱印
+                  </li>
+                  <li>本興寺：財産繁栄の神様である大黒天様のご朱印</li>
+                  <li>常楽寺：長寿・延命の神様である寿老人のご朱印</li>
+                  <li>尼崎えびす神社：商売繁盛の神様である恵比寿神のご朱印</li>
+                </ol>
+                <p>感想</p>
+                <p>
+                  尼崎では七つの福運が受けられると言われている七福神巡りができます。七福神巡りの寺社にはそれぞれ朱印台があり各自で押していくスタイルとなっています。
+                  まずは阪神尼崎駅付近のあまがさき観光案内所で七福神めぐりの朱印用色紙を購入しました。色紙は尼崎市出身で「落第忍者乱太郎」の作者である尼子騒兵衛さんが描いていて七福神が可愛らしくて気分も上がりました。
+                  私は貴布禰神社→長遠寺→大覚寺→法園寺→本興寺→常楽寺→尼崎えびす神社の順で巡りました。あまり阪神尼崎周辺は行かないので七福神巡りで未知の場所を開拓する喜びが味わえると同時に、それぞれの寺社で建物や瓦などの特徴も違っていて見所満載で思い出に残る1日になりました。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="is-show" data-category="osaka">
+            <h2>露天(つゆのてん)神社</h2>
+            <p>〒530-0057 大阪府大阪市北区曾根崎2丁目5-4</p>
+            <div class="flex">
+              <div class="right">
+                <div class="swiper-container">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/10-1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/10-2.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/10-3.jpg" />
+                      </div>
+                    </div>
+
+                    <!-- 必要に応じてナビボタン -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- 必要に応じてページネーション -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="left">
+                <p>概要</p>
+                <ul>
+                  <li>
+                    かつて曽根崎と呼ばれていたこの地で遊女であるお初と恋仲の手代徳兵衛が心中を遂げたゆかりの地
+                  </li>
+                  <li>
+                    歴史の授業で習った近松門左衛門の「曽根崎心中」は当神社で情死した事件をきっかけに劇化したもの
+                  </li>
+
+                  <li>
+                    縁結びで人気が高いが病気平癒、商売繁盛、学問等あらゆるご神徳を持つことから実はほぼ全ての願いにご利益がある最強のパワースポット
+                  </li>
+                </ul>
+                <p>感想</p>
+                <p>
+                  露天神社に向かって飲食店等が並ぶお初天神通り商店街を歩いていると商店街の側に神社があって以外な場所で驚きました。境内に入ると周囲とはガラリと変わって静かでゆったりとした空気が流れているような感じがしました。
+                  この神社では滅多に見ないような桃色や紫、黄緑等色とりどりの御朱印から選べたのが印象的でした。
+                  さらに、お初と徳兵衛が大きく描かれたイラストやブロンズ像、旗も飾られていてその場所ならではの神秘的な雰囲気を楽しめます。
+                  梅田の駅からも徒歩圏内でショッピングしながらでも寄れると思うので是非訪れてみて下さい。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="is-show" data-category="hyogo">
+            <h2>生田神社</h2>
+            <p>〒650-0011 神戸市中央区下山手通1丁目2-1</p>
+            <div class="flex">
+              <div class="right">
+                <div class="swiper-container">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/11-1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/11-2.jpg" />
+                      </div>
+                    </div>
+
+                    <!-- 必要に応じてナビボタン -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- 必要に応じてページネーション -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="left">
+                <p>概要</p>
+                <ul>
+                  <li>
+                    ご祭神「稚日女尊(わかひるめのみこと)」は機織りの神として知られており糸と糸を成すように良きご縁を結ぶと呼ばれている
+                  </li>
+                  <li>
+                    地名神戸の発祥地で生田の神を守る家、神戸(かんべ)が神戸という地名の語源
+                  </li>
+                  <li>
+                    日本書紀に3世紀頃創建と記載されていて1000年以上の歴史ある神社
+                  </li>
+                </ul>
+                <p>感想</p>
+                <p>
+                  神戸中心地に位置していて三宮駅からも近いので参拝者が多くて賑やかでした。朱色の荘厳な建物は遠くからでも目立っていてとても見ごたえがあります。私が訪れた時は生田神社とベビー・子ども関連ブランドfamiliarがコラボした御朱印帳も売っていました。今使っている御朱印帳はシンプルで気に入っていますが、もしもう一度御朱印帳を買い直すならここでfamiliarの御朱印帳を買いたいと思いました。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="is-show" data-category="hyogo">
+            <h2>北野天満神社</h2>
+            <p>〒650-0002 兵庫県神戸市中央区北野町3丁目12-1</p>
+            <div class="flex">
+              <div class="right">
+                <div class="swiper-container">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/12-1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/12-2.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/12-3.jpg" />
+                      </div>
+                    </div>
+
+                    <!-- 必要に応じてナビボタン -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- 必要に応じてページネーション -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="left">
+                <p>概要</p>
+                <ul>
+                  <li>
+                    学問の神様で親しまれている菅原道真公をお祀りする由緒ある神社
+                  </li>
+
+                  <li>
+                    治承4年6月、平清盛公が京都から神戸に都を移し「福原の都」をつくるに当たって禁裡守護、鬼門鎮護の神として京都北野天満宮から勧請して祀られた古い歴史をもっている
+                  </li>
+                  <li>
+                    約260年前にご造営された本殿は透塀、拝殿、鳥居、灯籠、石段とあわせ昭和60年に神戸市の伝統的建造物として文化財に指定されている
+                  </li>
+                </ul>
+                <p>感想</p>
+                <p>
+                  神戸北野の異人館、風見鶏の館の隣りにあります。急な階段を上った所に本殿があり、澄んだ空気で神聖な雰囲気に包まれているように感じられて心を入れ替えられるような場所です。
+                  さらに、高台にあるため神戸の街並みを一望出来て思い出になりました。
+                  北野天満宮と同じく菅原道真を祀っているため天神様(菅原道真)のお遣いである牛の像があったのも印象的でした。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- トップへ戻るボタン -->
+      </main>
+      <footer>
+        <a class="pagetop" href="#"><div class="pagetop__arrow"></div></a>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/petite-vue"></script>
+    <script src="script.js"></script>
+    <script src="arrow.js"></script>
+  </body>
+</html>
